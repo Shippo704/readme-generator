@@ -9,25 +9,25 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the title of your project?',
+        message: 'What is the title of your project? ',
     },
     // Description
     {
         type: 'input',
         name: 'description',
-        message: 'Enter a description for your project',
+        message: 'Enter a description for your project: ',
     },
     // Installation
     {
         type: 'input',
         name: 'installation',
-        message: 'Enter the installation instructions for your project',
+        message: 'Enter the installation instructions for your project: ',
     },
     //Usage
     {
         type: 'input',
         name: 'usage',
-        message: 'Enter the usage instructions for your project',
+        message: 'Enter the usage instructions for your project: ',
     },
     // LICENSE OPTIONS
     {
@@ -54,24 +54,24 @@ const questions = [
     {
         type: 'input',
         name: 'contributing',
-        message: 'Enter the names of the people who contributed (names separated by commas)',
+        message: 'Enter the names of the people who contributed (names separated by commas): ',
     },
     // Tests
     {
         type: 'input',
         name: 'tests',
-        message: 'Enter the test instructions for your project',
+        message: 'Enter the test instructions for your project: ',
     },
     // QUESTIONS SEGMENT
     {
         type: 'input',
         name: 'user',
-        message: 'Enter your Github username',
+        message: 'Enter your Github username: ',
     },
     {
         type: 'input',
         name: 'email',
-        message: 'Enter your email',
+        message: 'Enter your email: ',
     }
 ];
 
@@ -86,7 +86,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then((data) => {
-            writeToFile('myREADME.md', data)
+            writeToFile('README.md', data)
         });
 };
 

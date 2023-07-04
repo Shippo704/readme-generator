@@ -131,6 +131,11 @@ function generateMarkdown(data) {
   Check out my GitHub repositories at [github.com/${data.user}](github.com/${data.user})
 
   If you have any questions, email me at ${data.email}
+
+  ## References
+
+  I used [https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
+  to find a list of license badges and their image links.
 `;
 }
 
